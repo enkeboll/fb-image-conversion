@@ -1,0 +1,24 @@
+<html>
+<body>
+	<form action="upload_file.php" method="post" enctype="multipart/form-data">
+		<input type="hidden" name="MAX_FILE_SIZE" value="2000000" />
+		<label for="original">Original:</label>
+		<input type="file" name="original" /> 
+		<br />
+		
+		<label for="addition">Addition:</label>
+		<input type="file" name="addition" /> 
+		<br />
+		
+		<label for="location">New image location (relative to first image): </label><br />
+		<input type="radio" name="location" value="1"> Left<br />
+		<input type="radio" name="location" value="3"> Right<br />
+		<input type="radio" name="location" value="2"> Top<br />
+		<input type="radio" name="location" value="4"> Bottom<br />
+		
+		<input type="submit" name="submit" value="Upload" /><br />
+		Note: no bitmaps (*.bmp) allowed!
+	</form>
+
+</body>
+</html>
